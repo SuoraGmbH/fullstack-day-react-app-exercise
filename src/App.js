@@ -4,6 +4,7 @@ import { ScoreBoard } from "./component/ScoreBoard";
 import { Provider } from "react-redux";
 import { configureStore } from "./redux/configureStore";
 import { History } from "./component/History";
+import DevTools from "./DevTools";
 
 const store = configureStore();
 
@@ -15,6 +16,7 @@ function App() {
         <ScoreBoard />
         <History />
       </div>
+      <DevTools />
     </Provider>
   );
 }
